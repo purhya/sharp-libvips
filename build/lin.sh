@@ -279,7 +279,7 @@ if [ $ADD_LIBDE265_OPTIONAL_DEPEDENCY = true ]; then
   $CURL https://github.com/strukturag/libde265/releases/download/v${VERSION_DE265}/libde265-${VERSION_DE265}.tar.gz | tar xzC ${DEPS}/de265 --strip-components=1
   cd ${DEPS}/de265
   # Do not build the dec265 and sherlock265 example programs.
-  ./configure --disable-dec265 --disable-sherlock265
+  ./configure --host=${CHOST} --disable-dec265 --disable-sherlock265
   CFLAGS="${CFLAGS} -O3" CXXFLAGS="${CXXFLAGS} -O3" cmake -G"Unix Makefiles" \
     -DCMAKE_TOOLCHAIN_FILE=${ROOT}/Toolchain.cmake -DCMAKE_INSTALL_PREFIX=${TARGET} -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release \
     -DBUILD_SHARED_LIBS=FALSE
