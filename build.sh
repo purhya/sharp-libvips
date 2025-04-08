@@ -29,7 +29,7 @@ if [ $# -lt 1 ]; then
 fi
 VERSION_VIPS="$1"
 PLATFORM="${2:-all}"
-ADD_LIBDE265_OPTIONAL_DEPEDENCY="${3:-false}"
+ADD_LIBDE265_OPTIONAL_DEPEDENCY="${3:-true}"
 
 # macOS
 # Note: we intentionally don't build these binaries inside a Docker container
