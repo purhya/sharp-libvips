@@ -20,6 +20,7 @@ used under the terms of the following licences:
 | libexif       | LGPLv3                                                                                                    |
 | libffi        | MIT Licence                                                                                               |
 | libheif       | LGPLv3                                                                                                    |
+| libde265      | LGPLv3                                                                                                    |
 | libimagequant | [BSD 2-Clause](https://github.com/lovell/libimagequant/blob/main/COPYRIGHT)                               |
 | libnsgif      | MIT Licence                                                                                               |
 | libpng        | [libpng License](https://github.com/pnggroup/libpng/blob/master/LICENSE)                                  |
