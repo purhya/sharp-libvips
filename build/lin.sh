@@ -2,7 +2,7 @@
 set -e
 
 # Optional depedency to add libde265 to the build which enables HEIC support in libvips
-ADD_LIBDE265_OPTIONAL_DEPEDENCY="${1:-false}"
+ADD_LIBDE265_OPTIONAL_DEPEDENCY="${1:-true}"
 
 # Used to specify correct cmake DWITH_LIBDE265 flag for libheif
 if [ "$ADD_LIBDE265_OPTIONAL_DEPEDENCY" == "true" ]; then
